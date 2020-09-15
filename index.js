@@ -10,7 +10,7 @@ const {
   baseUrlRegion
 } = process.env;
 
-//fetch entry handler
+//Fetch entry handler
 
 const getEntry = async (contentTypeUid, uid) => {
   var options = {
