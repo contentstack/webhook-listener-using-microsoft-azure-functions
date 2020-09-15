@@ -16,4 +16,4 @@ We have created an in-depth tutorial on the demonstrating the azure function use
 
 Read Contentstack [docs](https://www.contentstack.com/docs/)
 
-Read Guide [Creating an Automated Webhook Listener Using Webhooks and AWS Lambda](https://www.contentstack.com/docs/developers/how-to-guides/creating-an-automated-webhook-listener-using-webhooks-and-aws-lambda/)
+Read Guide [Creating an Automated Webhook Listener Using Webhooks and Azure Functions](https://www.contentstack.com/docs/developers/how-to-guides/creating-an-automated-webhook-listener-using-webhooks-and-aws-lambda/)
