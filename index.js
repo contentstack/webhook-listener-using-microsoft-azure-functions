@@ -1,4 +1,4 @@
-// Module dependency
+// Module dependencies
 
 const axios = require("axios");
 
@@ -6,7 +6,7 @@ const axios = require("axios");
 
 const { managementToken, apiKey, baseUrlRegion} = process.env;
 
-//fetch entry
+//fetch entry handler
 
 const getEntry = async (contentTypeUid,uid) => {
   var options = {
@@ -28,7 +28,7 @@ const getEntry = async (contentTypeUid,uid) => {
   }
 };
 
-// Update entry
+// Update entry handler
 
 const updateEntry = async (sortOrderField, contentTypeUid, uid) => {
   var options = {
@@ -48,7 +48,7 @@ const updateEntry = async (sortOrderField, contentTypeUid, uid) => {
   return axios(`${baseUrlRegion}v3/content_types/${contentTypeUid}/entries/${uid}`,options);
 };
 
-// main handler
+// Main handler
 
 const sortUpdateHandler = async (contentTypeUid, entryUid) => {
   
@@ -58,31 +58,13 @@ const sortUpdateHandler = async (contentTypeUid, entryUid) => {
   }
 };
 
-exports.handler = async (event, context, callback) => {
-  let body = JSON.parse(event.body);
-  try {
-    await sortUpdateHandler(body.data.content_type.uid, body.data.entry.uid);
-    return {
-      statusCode: 200,
-      body: JSON.stringify({ message: "Field Updated" }),
-    };
-  } catch (e) {
-    console.log(e);
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ error: e.message }),
-    };
-  }
-};
-
-
 module.exports = async function (context, req) {
     let body = req.body
     try {
       await sortUpdateHandler(body.data.content_type.uid, body.data.entry.uid);
       context.res = {
         status: 200,
-        body: "Success !"
+        body: "Success |!"
     };
     } catch (e) {
       console.log(e);
