@@ -64,7 +64,7 @@ module.exports = async function (context, req) {
       await sortUpdateHandler(body.data.content_type.uid, body.data.entry.uid);
       context.res = {
         status: 200,
-        body: "Success |!"
+        body: "Success !!"
     };
     } catch (e) {
       console.log(e);
