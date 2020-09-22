@@ -16,4 +16,4 @@ We have created an in-depth tutorial that demonstrates the working on Azure Func
 
 Read Contentstack [Docs](https://www.contentstack.com/docs/)
 
-Read Guide [Create an Automated Webhook Listener Using Contentstack Webhook and Azure Functions](https://www.contentstack.com/docs/developers/how-to-guides/create-an-automated-webhook-listener-using-contentstack-webhook-and-azure-functions/)
+Read Guide [Create an Automated Webhook Listener Using Contentstack Webhook and Azure Functions](https://www.contentstack.com/docs/developers/how-to-guides/creating-an-automated-webhook-listener-using-contentstack-webhooks-and-microsoft-azure/)
