@@ -4,7 +4,9 @@ const axios = require("axios");
 
 //Environment variables
 
-const { managementToken, apiKey, baseUrlRegion } = process.env;
+//baseUrl option's : European (https://eu-api.contentstack.com/) or North America (https://api.contentstack.io/)
+
+const { managementToken, apiKey, baseUrl } = process.env;
 
 //Fetch entry handler
 
@@ -19,7 +21,7 @@ const getEntry = async (contentTypeUid, uid) => {
     },
   };
   let response = await axios(
-    `${baseUrlRegion}v3/content_types/${contentTypeUid}/entries/${uid}`,
+    `${baseUrl}v3/content_types/${contentTypeUid}/entries/${uid}`,
     options
   );
   let { date, priority } = response.data.entry;
@@ -49,7 +51,7 @@ const updateEntry = async (sortOrderField, contentTypeUid, uid) => {
     },
   };
   return axios(
-    `${baseUrlRegion}v3/content_types/${contentTypeUid}/entries/${uid}`,
+    `${baseUrl}v3/content_types/${contentTypeUid}/entries/${uid}`,
     options
   );
 };
