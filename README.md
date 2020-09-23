@@ -4,7 +4,7 @@
 
 Contentstack is a headless CMS with an API-first approach that puts content at the center. It is designed to simplify the process of publication by separating code from content.
 
-An automated webhook listener simplifies the process of managing content. This webhook listener is built by integrating Microsoft Azure Functions with Contentstack webhook. When you make any changes to the fields of an entry, another field (that you specify) gets updated automatically. We have created an automated system that does exactly this.
+An automated webhook listener simplifies the process of managing content. This webhook listener is built by integrating Microsoft Azure Functions with Contentstack Webhook. When you make any changes to the fields of an entry, another field (that you specify) gets updated automatically. We have created an automated system that does exactly this.
 
 # Tutorial
 
