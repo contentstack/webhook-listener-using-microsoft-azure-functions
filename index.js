@@ -2,9 +2,13 @@
 
 const axios = require("axios");
 
-//Environment variables
+/*
+* baseUrl option's
+* European (https://eu-api.contentstack.com/)
+* North America (https://api.contentstack.io/)
+*/
 
-//baseUrl option's : European (https://eu-api.contentstack.com/) or North America (https://api.contentstack.io/)
+//Environment variables
 
 const { managementToken, apiKey, baseUrl } = process.env;
 
